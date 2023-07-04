@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Circular Std', Helvetica, Arial, sans-serif !important;
+}
+
+body {
+    background: var(--fundo);
+    background-attachment: fixed !important;
+    /* padding: 0px 15px !important;
+    margin: 0px 68px !important; */
+    
+    line-height: 1.5em !important;
+}
+
+:root {
+    --textcolor: rgba(68, 68, 68, 1);
+    --fundo: url('../img/capa.png'), url('../img/ruido.png'), linear-gradient(50deg, #ff4169 0, #7C26F8 100%);
+}
+
+.navbar-transp {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-logo {
+    background-image: url('../img/spotify.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 132px;
+    display: block;
+}
+
+.nav-link {
+    box-sizing: border-box !important;
+    padding: 28px 17px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    height: 100% !important;
+}
+
+.nav-link:hover {
+    color: aquamarine !important;
+}
+
+.divzr {
+    background-color: white;
+    width: 1px;
+    height: 1rem;
+    margin: 15px 10px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px 0px 80px;
+}
+
+.first>h1 {
+    height: 100px !important;
+    color: white;
+    font-weight: 900 !important;
+    font-size: 60px !important;
+    letter-spacing: -0.04em !important;
+    margin-bottom: 15px !important;
+    padding: 0px !important;
+}
+
+.first>h2 {
+    color: #9BF0E1;
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap !important;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin-top: 94px !important;
+    margin-bottom: 15px !important;
+    padding: 3px 0px !important;
+    cursor: pointer;
+    border-bottom: 1px solid #9BF0E1;
+}
+
+.first .btn {
+    color: white;
+    margin: 10px 20px !important;
+    padding: 9px 47px;
+    border-radius: 500px !important;
+    min-width: 130px !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    white-space: nowrap !important;
+    transition: background-color .2s;
+}
+
+.first .btn-persap {
+    background-color: rgba(125, 37, 248, 1) !important;
+}
+
+.first .btn-persap:hover {
+    color: white;
+    background-color: #6207e3 !important;
+}
+
+.first .btn-persob {
+    border: 2px solid white;
+    background-color: transparent !important;
+}
+
+.first .btn-persob:hover {
+    color: black;
+    background-color: rgba(256, 256, 256, 1) !important;
+}
+
+.fullwidth-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    padding: 150px 0px;
+}
+
+.fullwidth-container .imgs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    overflow: hidden;
+}
+
+.fullwidth-container .img-grid {
+    display: block;
+    max-width: 100%;
+}
+
+.second {
+    color: white;
+    font-size: 1em;
+    line-height: 1;
+}
+
+.second h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.second h3 {
+    color: aquamarine;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.second label {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.second .img-grid {
+    transform: rotate(30deg) translate3d(-50px, -150px, 0);
+}
+
+.fullwidth-container-bottom {
+    background-color: black;
+    position: relative;
+}
+
+.fullwidth-container-bottom .img-logo {
+    background-image: url('../img/spotify.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 132px;
+    display: block;
+}
+
+.fullwidth-container-bottom h3{
+    color: darkgray;
+}
+
+.fullwidth-container-bottom a{
+    color: white !important;
+    margin-top: 10px;
+}
+
+.marke {
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 768px) {
+    .first>h1 {
+        height: 100px !important;
+        color: white;
+        font-weight: 900 !important;
+        font-size: 40px !important;
+        letter-spacing: -0.04em !important;
+        margin-bottom: 15px !important;
+        padding: 0px !important;
+        white-space: nowrap !important;
+    }
+}
